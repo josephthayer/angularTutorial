@@ -1,13 +1,14 @@
 <!--Angular Example-->
 <!-- Joe Thayer-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="">
     <head>
         <meta charset="UTF-8">
-        <title>AngularJS | Welcome!</title>
+        <title>AngularJS | ng-model/ng-bind</title>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     </head>
     <body>
-        SPA - Single Page Applications
+        <input type="text" ng-model="name">
+        <div> {{name}}</div> <!--or use ng-bind attribute, but can only use ng-bind with input or textarea-->
     </body>
 </html>
